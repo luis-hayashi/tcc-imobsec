@@ -12,16 +12,23 @@
 
             <div class="card">
                 
-                <h1>Vamos simular a compra de seu imóvel</h1>
+                <h1>Resultados</h1>
 
                 <div class="box">
-                    <input type="number" name="" id="" placeholder="Renda bruta mensal"/>
-                    <input type="number" name="" id="" placeholder="Valor do imóvel"/>
-                    <input type="number" name="" id="" placeholder="Valor de entrada"/>
-                    <input type="number" name="" id="" placeholder="Tempo de pagamento (mêses)"/>
+                    <div class="left-side">
+                        <h1>Financiar</h1>
+                        <p>R$ 457.800</p>
+                        <h1>Primeira parcela</h1>
+                        <p>R$ 16.321,92</p>
+                        <h1>Última parcela</h1>
+                        <p>R$ 12.837,99</p>
+                    </div>
+                    <div class="right-side">
+                        <div class="card2">
+                            <h1>Calculamos o valor que você pode financiar baseado na sua renda.<br> O valor de entrada foi limitado em R$ 200.000, pois os bancos costumam limitar a entrada em 80% do valor do imóvel.</h1>
+                        </div>
+                    </div>
                 </div>
-
-                <button type="submit"><a href="/result">SIMULAR</a></button>
 
             </div>
         </div>
@@ -79,7 +86,7 @@ body {
 
 h1 {
     color: rgba(0, 0, 0, 0.64);
-    font-size: 30px;
+    font-size: 40px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -88,10 +95,32 @@ h1 {
 
 .box {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 20px;
     padding: 10px;
+    width: 100%;
 
+}
+
+.left-side {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.left-side p {
+    font-size: 40px;
+}
+
+.right-side {
+    width: 50%;
+}
+
+.card2 {
+    background: #D9D9D9;
+    border-radius: 30px;
+    padding: 10px;
 }
 
 .box input {

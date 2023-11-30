@@ -1,7 +1,7 @@
 <template>
     <header>
             <nav class="navbar">
-                <a href="#" class="nav-branding"><img src="../images/logo azul.png" class="img"/></a>
+                <a href="/" class="nav-branding"><img src="../images/logo azul.png" class="img"/></a>
                 <ul v-if="hamburguerActive" class="nav-menu active">
                     <li class="nav-item">
                         <a href="/" class="nav-link">Home</a>
@@ -39,14 +39,7 @@
                         <a href="/simulacao" class="nav-link">Simular</a>
                     </li>
                     <li class="nav-item">
-                        <a href="/ajuda" class="nav-link">Ajuda</a>
-                    </li>
-                    <li class="nav-item">
                         <a href="/sobre" class="nav-link">Sobre</a>
-                    </li>
-                    <li class="nav-item">
-                        <NuxtLink to="/auth/login" v-if="!user" class="nav-link"> <a> Entrar </a> </NuxtLink>
-                        <NuxtLink to="/profile" v-else> <a> Perfil </a> </NuxtLink>
                     </li>
                     <li class="nav-item">
                         <NuxtLink to="/auth/login" v-if="!user" class="nav-link"> <a> Entrar </a> </NuxtLink>

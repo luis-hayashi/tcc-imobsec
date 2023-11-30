@@ -1,104 +1,100 @@
 <template>
-    <div class="layout">
-        <div class="background-case">
-            <img src="galeriaicon.svg" alt="galeria">
-        </div>
+    <body>
+        
+    </body>
+    <main>
+        <navbar/>
+        <div class="layout">
+            <div class="background-case">
+                
+            </div>
 
-        <div class="top-row">
-            <div class="left-col">
-                <div class="photo">
-                    <img src="personicon.svg" alt="foto-perfil">
-                    <div class="stars">
-                        <i class="fa-regular fa-star" style="color: black;"></i>
-                        <i class="fa-regular fa-star" style="color: black;"></i>
-                        <i class="fa-regular fa-star" style="color: black;"></i>
-                        <i class="fa-regular fa-star" style="color: black;"></i>
-                        <i class="fa-regular fa-star" style="color: black;"></i>
+            <div class="top-row">
+                <div class="left-col">
+                    <div class="photo">
+                        <img src="../images/eu.png" alt="foto-perfil">
                     </div>
-                </div>
 
-                <div class="profile-content">
-                    <div class="line-1">
-                        <h1 class="name">Vendedor 1</h1>
-                        <div class="verify">
-                            <i class="fa-solid fa-check-circle" style="color: #193083;"></i>
-                            <p> Em atividade desde (ano)</p>
+                    <div class="profile-content">
+                        <div class="line-1">
+                            <h1 class="name">Luis Felipe</h1>
+                            <div class="verify">
+                                <i class="fa-solid fa-check-circle" style="color: #193083;"></i>
+                                <p> Em atividade desde 2023</p>
+                            </div>
+                        </div>
+
+                        <div class="status">
+                            <i class="fa-solid fa-circle fa-xs" style="color: rgb(48, 241, 0);"></i>
+                            <p>Online</p>
+                        </div>
+
+                        <div class="info">
+                            <p class="descri">São José dos Campos, SP.</p>
+                            <p class="descri"></p>
                         </div>
                     </div>
-
-                    <div class="status">
-                        <i class="fa-solid fa-circle fa-xs" style="color: rgb(48, 241, 0);"></i>
-                        <p>Online</p>
-                    </div>
-
-                    <div class="info">
-                        <p class="descri">Cidade, UF.</p>
-                        <p class="descri">Descrição</p>
-                    </div>
                 </div>
-            </div>
 
 
-            <div class="right-col">
-                <button class="message-button"> <i class="fa-solid fa-message"></i>
-                    Mensagem direta</button>
-                <div class="social-media">
-                    <i class="fa-brands fa-facebook fa-xl"></i>
-                    <i class="fa-brands fa-instagram fa-xl"></i>
-                    <i class="fa-brands fa-linkedin fa-xl"></i>
+                <div class="right-col">
+                    <img class="wplogo" src="../images/wplogo.png">
+                    <button class="message-button">
+                        +55 (12) 98154-7200</button>
                 </div>
             </div>
         </div>
-    </div>
 
-    <div class="main-col">
-        <div class="mid-row">
-            <div class="left-buttons">
-                <h1>Anúncios</h1>
-                <button class="filter">Filtros <img src="filtericon.svg" alt="filter"></button>
+        <div class="main-col">
+            <div class="mid-row">
+                <div class="left-buttons">
+                    <h1>Anúncios</h1>
+                </div>
+
+                <div class="right-select">
+                    <input type="radio" name="tipo-imovel" id="Destaque">
+                    <label for="Destaque">Destaques</label>
+
+                    <input type="radio" name="tipo-imovel" id="Todos">
+                    <label for="Todos">Todos</label>
+
+                    <input type="radio" name="tipo-imovel" id="Temporada">
+                    <label for="Temporada">Temporada</label>
+
+                    <input type="radio" name="tipo-imovel" id="Comprar/Alugar">
+                    <label for="Comprar/Alugar">Comprar/Alugar</label>
+                </div>
             </div>
 
-            <div class="right-select">
-                <input type="radio" name="tipo-imovel" id="Destaque">
-                <label for="Destaque">Destaques</label>
-
-                <input type="radio" name="tipo-imovel" id="Todos">
-                <label for="Todos">Todos</label>
-
-                <input type="radio" name="tipo-imovel" id="Temporada">
-                <label for="Temporada">Temporada</label>
-
-                <input type="radio" name="tipo-imovel" id="Comprar/Alugar">
-                <label for="Comprar/Alugar">Comprar/Alugar</label>
-            </div>
-        </div>
-
-        <div class="ad-card">
+            <div class="ad-card">
             <div class="anuncio-wrapper">
 
                 <div class="ad-photo">
-                    <img src="svg/photo.png" style="color: #bcbcbc;" />
+                    <img src="../images/casa1.jpg" style="color: #bcbcbc;" />
                 </div>
                 <div class="ad-content">
                     <div class="ad-content-left">
                         <div class="ad-content-left-top">
-                            <h2>Título do anúncio</h2>
-                            <p>Bairro, Cidade</p>
+                            <a>Casa no Urbanova em bom estado</a>
+                            <p>Urbanova, São José dos Campos</p>
                         </div>
                         <div class="ad-content-left-middle">
+                            Casa bem acomodada com quatro quartos e três banheiros.
                         </div>
-                        <div class="ad-content-left-button">
-                            <img src="svg/heart.png" alt="heart">
+                        <div class="ad-content-left-bottom">
+                            <img src="../images/vector.svg" alt="heart" class="imgad">
                         </div>
                     </div>
                     <div class="ad-content-right">
-                        <h4>R$ VALOR DO TOTAL</h4>
-                        <p>VALOR DA ENTRADA</p>
+                        <h4>R$ 654.000</h4>
+                        <p>R$ 200.000</p>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+        </div>
+        <footerComp/>
+    </main>
 </template>
 
 <style scoped>
@@ -128,6 +124,10 @@ body {
     align-items: center;
     justify-content: center;
     margin: 0;
+}
+
+.wplogo {
+    width: 100px;
 }
 
 .background-case img {
@@ -229,7 +229,7 @@ body {
 
 .right-col {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 20px;
     margin-top: 10px;
     align-items: center;
@@ -242,7 +242,6 @@ body {
     color: rgba(0, 0, 0, 0.60);
     font-size: 18px;
     text-align: center;
-    cursor: pointer;
     align-items: center;
     justify-content: center;
     height: 8vh;
@@ -366,7 +365,7 @@ body {
 }
 
 .ad-photo img {
-    width: 85px;
+    width: 200px;
 }
 
 .ad-content {
@@ -395,22 +394,26 @@ body {
 }
 
 .ad-content-right {
-    width: 35%;
+    width: 10vw;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
 }
 
 .ad-content-right h4 {
+    display: flex;
+    justify-content: center;
     font-weight: 500;
     color: #193083;
     font-size: 1.2rem;
 }
 
 .ad-content-right p {
+    display: flex;
+    justify-content: center;
     font-weight: 400;
     font-size: 0.92rem;
-    margin-left: 40px;
 }
 
 .ad-content-left-bottom img {

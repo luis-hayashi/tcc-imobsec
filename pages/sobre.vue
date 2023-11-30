@@ -1,4 +1,8 @@
 <template>
+    <body>
+        
+    </body>
+    <main>
     <navbar />
             
                 <div class="about">
@@ -63,6 +67,7 @@
                 <footer>
                     <footerComp />
                 </footer>
+            </main>
 </template>
 
 <script setup>
@@ -76,6 +81,11 @@
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
+}
+
+body {
+    padding: 0;
+    margin: 0;
 }
 
 html {

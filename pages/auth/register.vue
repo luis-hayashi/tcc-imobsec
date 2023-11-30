@@ -64,6 +64,7 @@
                                 <input type="email" v-model="email" placeholder="E-mail" class="box" name="email" required/>
                                 <input type="password" v-model="password" placeholder="Senha" class="box" name="password" required/>
                                 <input type="number" v-model="cpf" placeholder="CPF" class="box" name="cpf" />
+                                <input type="number" v-model="Celular" placeholder="Celular" class="box" name="celular" />
                             </div>
                             <div class="button">
                                 <button @click="signUpAll" type="submit" class="cadastrar"> CADASTRAR</button>

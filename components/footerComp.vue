@@ -1,5 +1,5 @@
 <template>
-    <body class="bodie">
+
     <footer>
         <div class='footer-section'>
             <div class='logo'>
@@ -81,7 +81,7 @@
             <p>Copyright ©  2023, iMobSec. All Rights Reserved </p>
         </div>
     </footer>
-</body>
+
 </template>
 
 <style scoped>
@@ -96,9 +96,6 @@ footer img {
     padding: 0;
 }
 
-.bodie {
-    margin: 0;
-}
 
 .footer-section{
     display: flex;
